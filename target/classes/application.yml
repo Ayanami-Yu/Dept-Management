@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: Mysql222911!
+    url: jdbc:mysql://localhost:3306/myProject?useSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    hibernate:
+      # Hibernate ddl auto (create, create-drop, validate, update)
+      ddl-auto: update
+    properties:
+      hibernate:
+        # The SQL dialect makes Hibernate generate better SQL for the chosen database
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8081
